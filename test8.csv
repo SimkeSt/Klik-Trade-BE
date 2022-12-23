@@ -1,0 +1,52 @@
+Sign,Profit
+"0    BTC/USDT
+Name: symbol, dtype: object","0    0.13502
+Name: close, dtype: float64"
+"0    LTC/USDT
+Name: symbol, dtype: object","0    2.830414
+Name: close, dtype: float64"
+"0    LINK/USDT
+Name: symbol, dtype: object","0   -3.455703
+Name: close, dtype: float64"
+"0    BNB/USDT
+Name: symbol, dtype: object","0    1.815509
+Name: close, dtype: float64"
+"0    XRP/USDT
+Name: symbol, dtype: object","0   -1.278877
+Name: close, dtype: float64"
+"0    EOS/USDT
+Name: symbol, dtype: object","0    0.063648
+Name: close, dtype: float64"
+"0    TRX/USDT
+Name: symbol, dtype: object","0    0.076967
+Name: close, dtype: float64"
+"0    NEO/USDT
+Name: symbol, dtype: object","0    0.627138
+Name: close, dtype: float64"
+"0    XLM/USDT
+Name: symbol, dtype: object","0   -0.753173
+Name: close, dtype: float64"
+"0    MATIC/USDT
+Name: symbol, dtype: object","0    1.423191
+Name: close, dtype: float64"
+"0    SOL/USDT
+Name: symbol, dtype: object","0    3.131274
+Name: close, dtype: float64"
+"0    EGLD/USDT
+Name: symbol, dtype: object","0    1.151845
+Name: close, dtype: float64"
+"0    DOT/USDT
+Name: symbol, dtype: object","0   -0.257639
+Name: close, dtype: float64"
+"0    DAO/USDT
+Name: symbol, dtype: object","0   -0.214906
+Name: close, dtype: float64"
+"0    CAKE/USDT
+Name: symbol, dtype: object","0    0.784168
+Name: close, dtype: float64"
+"0    AVAX/USDT
+Name: symbol, dtype: object","0    2.862017
+Name: close, dtype: float64"
+"0    ALGO/USDT
+Name: symbol, dtype: object","0   -4.208301
+Name: close, dtype: float64"

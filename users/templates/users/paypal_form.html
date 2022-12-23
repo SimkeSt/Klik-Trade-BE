@@ -1,12 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 
-{% if user.is_authenticated %}
+<head>
+    <!-- Add meta tags for mobile and IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> PayPal Checkout Integration | Client Demo </title>
+</head>
 
-
+<body>
+    <!-- Set up a container element for the button -->
     <div id="paypal-button-container"></div>
-    <p>Total monthly is 39.99</p>
+
     <!-- Include the PayPal JavaScript SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AcxiX2vWVbb3Ie8CAz0UvBRq8FraQhYoB9EhjuBLOlwYX31F36c2sJLKxShbNFxIuy_sjk7RKjTgRVtm&currency=USD"></script>
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
 
     <script>
         // Render the PayPal button into #paypal-button-container
@@ -29,16 +36,7 @@
                     // Successful capture! For demo purposes:
                     console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
                     var transaction = orderData.purchase_units[0].payments.captures[0];
-                    fetch("{% url 'thank_you' %}", {
-                        method: "GET",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify()
-                    })
-                    window.location.assign = "{% url 'thank_you' %}";
-
-
+                    alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
 
                     // Replace the above to show a success message within this page, e.g.
                     // const element = document.getElementById('paypal-button-container');
@@ -50,15 +48,7 @@
 
 
         }).render('#paypal-button-container');
-
-
-
     </script>
+</body>
 
-</form>
-{% else %}
-
-<h1>plz login</h1>
-
-{% endif %}
-
+</html>

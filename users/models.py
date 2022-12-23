@@ -9,6 +9,8 @@ class Profile(models.Model):
     refnumber = models.IntegerField(default=0)
     reflink = models.CharField(null=True,max_length=100)
     refdate = models.DateField(null=True)
+    paid = models.BooleanField(null=True)
+    paiddate =  models.DateField(null=True)
 
 @receiver(post_save, sender=User)
 def create_profile(sender, instance, created, **kwargs):
@@ -18,3 +20,10 @@ def create_profile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_profile(sender, instance, **kwargs):
     instance.profile.save()
+
+
+class Transaction(models.Model):
+    transactionid = models.IntegerField()
+    userid = models.IntegerField()
+    ammount = models.IntegerField()
+    paiddate =  models.DateField()
